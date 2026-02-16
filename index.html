@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dota 2 Tracker - XG | YB | VG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Loading Overlay -->
+  <div id="loading-overlay" class="loading-overlay">
+    <div class="spinner"></div>
+    <p class="loading-text">Initializing Dota 2 Tracker...</p>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-bar">
+      <div class="header-logo">
+        <span class="logo-icon">&#9876;</span>
+        DOTA 2 TRACKER
+      </div>
+      <nav class="nav" id="nav-tabs">
+        <button class="tab-btn tab-active" data-view="overview">Overview</button>
+        <button class="tab-btn" data-view="xg">XG</button>
+        <button class="tab-btn" data-view="yb">YB</button>
+        <button class="tab-btn" data-view="vg">VG</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="main-content">
+    <div class="container">
+      <!-- Live Banner -->
+      <div id="live-banner"></div>
+      <!-- Dynamic Content -->
+      <div id="content"></div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Powered by <a href="https://www.opendota.com/" target="_blank" rel="noopener">OpenDota API</a></p>
+      <p id="server-status" class="text-muted"></p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
